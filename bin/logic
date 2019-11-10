@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+if (!file_exists(dirname(__DIR__).'/vendor/autoload.php')) {
+    die(
+        'You need to set up the project dependencies using the following commands:' . PHP_EOL .
+        'wget http://getcomposer.org/composer.phar' . PHP_EOL .
+        'php composer.phar install' . PHP_EOL
+    );
+}
+
+set_time_limit(0);
+
+require dirname(__DIR__).'/vendor/autoload.php';
+
+use LexThink\Logic\LogicCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application('logic test', '1.0.0');
+$command = new LogicCommand();
+
+$application->add($command);
+$application->setDefaultCommand($command->getName(), true);
+$status = $application->run();
+exit($status);

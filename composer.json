@@ -1,0 +1,45 @@
+{
+    "name": "lexthink/logic",
+    "description": "Logic test command interactive",
+    "type": "library",
+    "keywords": ["php", "logic", "test"],
+    "homepage": "https://bitbucket.org/lexthink/logic",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manuel Alejandro Paz Cetina",
+            "email": "lexthink@icloud.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "symfony/console": "^4.3",
+        "symfony/stopwatch": "^4.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "overtrue/phplint": "^1.1",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": { "LexThink\\Logic\\": "src/" }
+    },
+    "bin": [
+        "bin/logic"
+    ],
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "phplint:check": "vendor/bin/phplint --ansi --verbose bin/ src/",
+        "style:check": [
+            "vendor/bin/php-cs-fixer fix --ansi --dry-run --verbose",
+            "vendor/bin/phpcs --colors -sp --standard=PSR2 bin/ src/"
+        ],
+        "style:fix": [
+            "vendor/bin/php-cs-fixer fix --ansi --verbose",
+            "vendor/bin/phpcbf --colors -sp --standard=PSR2 bin/ src/"
+        ]
+    }
+}
