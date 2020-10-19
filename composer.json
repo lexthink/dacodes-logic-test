@@ -1,9 +1,9 @@
 {
-    "name": "lexthink/logic",
+    "name": "lexthink/dacodes-logic-test",
     "description": "Logic test command interactive",
     "type": "library",
-    "keywords": ["php", "logic", "test"],
-    "homepage": "https://bitbucket.org/lexthink/logic",
+    "keywords": ["php", "dacodes", "logic", "test"],
+    "homepage": "https://github.com/lexthink/dacodes-logic-test",
     "license": "MIT",
     "authors": [
         {

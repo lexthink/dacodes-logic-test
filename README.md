@@ -7,10 +7,10 @@
 
 ## Installation
 
-Install it by `git clone https://bitbucket.org/lexthink/logic.git` or download zip file.
+Install it by `git clone https://github.com/lexthink/dacodes-logic-test` or download zip file.
 
 ```shell
-$ git clone https://bitbucket.org/lexthink/logic.git
+$ git clone https://github.com/lexthink/dacodes-logic-test
 $ cd logic
 $ composer install
 ```
