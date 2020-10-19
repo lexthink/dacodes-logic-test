@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the lexthink/logic package.
+ * This file is part of the lexthink/dacodes-logic-test package.
  *
  * (c) Manuel Alejandro Paz Cetina <lexthink@icloud.com>
  *

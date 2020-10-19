@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<EOF
-This file is part of the lexthink/logic package.
+This file is part of the lexthink/dacodes-logic-test package.
 
 (c) Manuel Alejandro Paz Cetina <lexthink@icloud.com>
 
@@ -17,6 +17,7 @@ return PhpCsFixer\Config::create()
         '@PHP70Migration:risky' => true,
         '@PHP71Migration' => true,
         '@PHP71Migration:risky' => true,
+        'header_comment' => ['header' => $header, 'separate' => 'both'],
         // symfony
         'class_attributes_separation' => true,
         'whitespace_after_comma_in_array' => true,
